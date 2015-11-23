@@ -9,23 +9,23 @@ Please follow the below steps in exact order to setup the project environment.
  
  Note:Please make sure that you install v.4.2.2 or earlier but not v.5.x and later.
 
-Step 2: Install GitBash
+ Step 2: Install GitBash
 
-Please install GitBash from  https://git-for-windows.github.io/
+ Please install GitBash from  https://git-for-windows.github.io/
 
-Step 3: Clone Repository
+ Step 3: Clone Repository
 
  1. Open GitBash command prompt.
 
-Move to projects root directory
+ Move to projects root directory
 
-```$ cd ./project_root_directory```
+ ```$ cd ./project_root_directory```
 
  2.Clone Repository
 
-```$ git clone https://github.com/upenaccion/gulp-start.git```
+ ```$ git clone https://github.com/upenaccion/gulp-start.git```
 
-Note: Please make sure that you have the GitHub account.If not please create it.
+ Note: Please make sure that you have the GitHub account.If not please create it.
 
 Step 4: Dependency Installations
 
@@ -35,16 +35,13 @@ Step 4: Dependency Installations
  
  ```$ cd ./project_root_directory```
 
-Please make sure that the directory contains the folder structure mentioned above with updated package.json, gulpfile.js and bower.json.
+ Please make sure that the directory contains the folder structure mentioned above with updated package.json, gulpfile.js and bower.json.
+ 
+ 3.Run below command
 
+ ```$ npm install```
 
-Run the below command
-
-
-$ npm install
-
-This will install all the required node dependencies like gulp,bower etc. which are mentioned in package.json file. 
-
+ This will install all the required node dependencies like gulp,bower etc. which are mentioned in package.json file. 
 
 Note: By default the dependencies installed by above command like gulp,bower etc will work locally i.e you won’t be able to run these commands outside the current directory.
 To install them globally you can run below commands:
@@ -53,19 +50,17 @@ npm install -g gulp --save
 This will install them globally.
 
 
-
-Run the below command
-
-
-$ bower install
-
-This will install all the required front end components like jquery,angularjs,bootstrap etc.  which are mentioned in bower.json file.
+ 4.Run the below command
 
 
-Run the below command
+ ```$ bower install```
+
+ This will install all the required front end components like jquery,angularjs,bootstrap etc.  which are mentioned in bower.json file.
+
+ 5.Run the below command
 
 
-$ gulp
+ ```$ gulp```
 
-This will run the automated tasks like minification & merging of files, sass to css compilation etc.These processed files would then be moved to dist/ folder for deployment. 
+ This will run the automated tasks like minification & merging of files, sass to css compilation etc.These processed files would then be moved to dist/ folder for deployment. 
  
