@@ -2,6 +2,7 @@
 Project Setup Steps
 
 Please follow the below steps in exact order to setup the project environment.
+
 Step 1: Install NPM
 Please install NPM v.4.2.2 from https://nodejs.org/en/download/
 Note:Please make sure that you install v.4.2.2 or earlier but not v.5.x and later.
