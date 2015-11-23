@@ -22,6 +22,8 @@ Clone Repository
 
 $ git clone https://github.com/upenaccion/gulp-start.git
 
+Note: Please make sure that you have the GitHub account.If not please create it.
+
 Step 4: Dependency Installations
 
 Open the command prompt
