@@ -3,17 +3,17 @@ Project Setup Steps
 
 Please follow the below steps in exact order to setup the project environment.
 
- Step 1: Install NPM
+###Step 1: Install NPM
  
  Please install NPM v.4.2.2 from https://nodejs.org/en/download/
  
  Note:Please make sure that you install v.4.2.2 or earlier but not v.5.x and later.
 
- Step 2: Install GitBash
+###Step 2: Install GitBash
 
  Please install GitBash from  https://git-for-windows.github.io/
 
- Step 3: Clone Repository
+###Step 3: Clone Repository
 
  1. Open GitBash command prompt.
 
@@ -27,7 +27,7 @@ Please follow the below steps in exact order to setup the project environment.
 
  Note: Please make sure that you have the GitHub account.If not please create it.
 
-Step 4: Dependency Installations
+###Step 4: Dependency Installations
 
  1.Open the command prompt
 
