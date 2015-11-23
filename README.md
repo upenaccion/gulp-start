@@ -3,9 +3,11 @@ Project Setup Steps
 
 Please follow the below steps in exact order to setup the project environment.
 
-Step 1: Install NPM
-Please install NPM v.4.2.2 from https://nodejs.org/en/download/
-Note:Please make sure that you install v.4.2.2 or earlier but not v.5.x and later.
+ Step 1: Install NPM
+ 
+ Please install NPM v.4.2.2 from https://nodejs.org/en/download/
+ 
+ Note:Please make sure that you install v.4.2.2 or earlier but not v.5.x and later.
 
 Step 2: Install GitBash
 
@@ -13,28 +15,25 @@ Please install GitBash from  https://git-for-windows.github.io/
 
 Step 3: Clone Repository
 
-Open GitBash command prompt.
+ 1. Open GitBash command prompt.
+
 Move to projects root directory
 
+```$ cd ./project_root_directory```
 
-$ cd ./project_root_directory
+ 2.Clone Repository
 
-Clone Repository
-
-
-$ git clone https://github.com/upenaccion/gulp-start.git
+```$ git clone https://github.com/upenaccion/gulp-start.git```
 
 Note: Please make sure that you have the GitHub account.If not please create it.
 
 Step 4: Dependency Installations
 
-Open the command prompt
+ 1.Open the command prompt
 
-
-move to the project root directory via command prompt
-
-
-$ cd ./project_root_directory
+ 2.move to the project root directory via command prompt
+ 
+ ```$ cd ./project_root_directory```
 
 Please make sure that the directory contains the folder structure mentioned above with updated package.json, gulpfile.js and bower.json.
 
