@@ -3,14 +3,24 @@ app.config(function($stateProvider,$urlRouterProvider){
   $stateProvider
   .state('login',{
     url:"/",
-    template:'<login-directive></login-directive>'
+    template:'<login-directive></login-directive>',
+	data: {
+		displayName: false
+	}
   })
-  .state('home',{
-    url:"/home",
-    template:'<home-directive></home-directive>'
+  .state('dashboard',{
+	url:"/dashboard",  
+    template:'<dash-directive></dash-directive>',
+	data: {
+		displayName: 'Dashboard'
+	}
   })
-  .state('home.dashboard',{
-    template:'<dash-directive></dash-directive>'
+  .state('dashboard.employee',{
+	url:"/employee",    
+    template:'<emp-directive></emp-directive>',
+	data: {
+		displayName: 'Employee'
+	}
   });
   /** $locationProvider $locationProvider.html5Mode(true); for pretty url **/
 });

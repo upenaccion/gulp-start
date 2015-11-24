@@ -1,1 +1,1 @@
-var app = angular.module('mainApp',['ui.router','ui.select2']);
+var app = angular.module('mainApp',['ui.router','ui.select2','angularUtils.directives.uiBreadcrumbs']);

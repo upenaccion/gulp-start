@@ -6,8 +6,9 @@ app.directive('loginDirective',[function(){
     controllerAs:'login',
     controller:function($state){ /** login controller */
       var self = this;
+	  self.print = 'from login controller';
       self.logIn = function(){ /** login function */
-        $state.go('home');
+        $state.go('dashboard');
       };
     }
   };

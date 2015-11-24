@@ -1,12 +1,12 @@
 //gulpfile.js
 'use strict';
 var gulp = require('gulp'),
-    compass = require('gulp-compass'),
+  compass = require('gulp-compass'),
 	sass = require('gulp-sass'),
 	minifycss = require('gulp-minify-css'),
 	minifyHTML = require('gulp-minify-html'),
 	del = require('del'),
-    mainBowerFiles = require('main-bower-files'), /** include bower files dynamically */
+   mainBowerFiles = require('main-bower-files'), /** include bower files dynamically */
 	/** Include plugins without requiring(needs to install though) */
 	plugins = require("gulp-load-plugins")({
 		pattern: ['gulp-*', 'gulp.*'],
@@ -23,7 +23,7 @@ gulp.task('jshint', function() {
 		.pipe(plugins.jshint.reporter('default'));
 });
 /** task to start server */
-gulp.task('express', function() {
+gulp.task('express', function(){
 	var express = require('express');
 	var app = express();
 	app.use(require('connect-livereload')({
@@ -44,7 +44,6 @@ function bytediffFormatter(data) {
 		return (num * 100).toFixed(precision);
 	};
 	var difference = (data.savings > 0) ? ' smaller.' : ' larger.';
-
 	return data.fileName + ' went from ' + (data.startSize / 1000).toFixed(2) + ' kB to ' + (data.endSize / 1000).toFixed(2) + ' kB' +
 		' and is ' + formatPercent(1 - data.percent, 2) + '%' + difference;
 }
@@ -74,7 +73,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('dist/css'));
 });
 /** task to pipe all library js in single file */
-gulp.task('vendorjs', function() {
+gulp.task('vendorjs', function(){
 	gulp.src(mainBowerFiles())
 		.pipe(plugins.filter('*.js'))
 		.pipe(plugins.concat('vendor.main.js'))
