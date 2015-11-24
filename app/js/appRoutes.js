@@ -4,23 +4,23 @@ app.config(function($stateProvider,$urlRouterProvider){
   .state('login',{
     url:"/",
     template:'<login-directive></login-directive>',
-	data: {
-		displayName: false
-	}
+    data: {
+      displayName: false
+    }
   })
   .state('dashboard',{
-	url:"/dashboard",  
+    url:"/dashboard",
     template:'<dash-directive></dash-directive>',
-	data: {
-		displayName: 'Dashboard'
-	}
+    data: {
+      displayName: 'Dashboard'
+    }
   })
   .state('dashboard.employee',{
-	url:"/employee",    
+    url:"/employee",
     template:'<emp-directive></emp-directive>',
-	data: {
-		displayName: 'Employee'
-	}
+    data: {
+      displayName: 'Employee'
+    }
   });
   /** $locationProvider $locationProvider.html5Mode(true); for pretty url **/
 });
