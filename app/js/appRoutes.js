@@ -1,4 +1,4 @@
-app.config(function($stateProvider,$urlRouterProvider){
+app.config(function($stateProvider,$urlRouterProvider,$locationProvider){
   $urlRouterProvider.otherwise("/");
   $stateProvider
   .state('login',{
@@ -22,5 +22,5 @@ app.config(function($stateProvider,$urlRouterProvider){
       displayName: 'Employee'
     }
   });
-  /** $locationProvider $locationProvider.html5Mode(true); for pretty url **/
+  $locationProvider.html5Mode(true);
 });

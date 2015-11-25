@@ -29,7 +29,11 @@ gulp.task('express', function(){
 	app.use(require('connect-livereload')({
 		port: 35729
 	}));
-	app.use(express.static(__dirname + '/dist'));
+	app.use(express.static(__dirname + '/dist')); /** Where to serve static content */
+  /** call all routes and return the index.html file here */
+  app.all('/*',function(req,res,next){
+     res.sendFile('index.html', { root: __dirname + '/dist'});
+  });
 	app.listen(30000, '0.0.0.0');
 });
 /** auto loading of browser if any changes occurs */
@@ -122,7 +126,7 @@ gulp.task('jstask', function() {
 /** Views task */
 gulp.task('views', function() {
 	/** Get our index.html */
-	gulp.src('app/index.html')
+	gulp.src(['app/index.html','.htaccess'])
 	.pipe(minifyHTML())
 	/** And put it in the public folder */
 	.pipe(gulp.dest('dist/'));
